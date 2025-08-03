@@ -1,5 +1,6 @@
 from livro import Livro
 from biblioteca import Biblioteca
+from usuario import Usuario
 
 #Cria uma instancia da classe Biblioteca
 biblioteca = Biblioteca()
@@ -30,3 +31,16 @@ isbn_remover = '0987654321'
 biblioteca.remover_livro(isbn_remover)
 print('\nApós remover o livro:')
 biblioteca.listar_livros()
+
+# Teste de entrada de um novo usuario:
+print('\nCadastro de um novo usu´raio:')
+nome = input('Digite o nome do usuário: ')
+email = input('Digite o email do usuário: ')
+id_usuario = input('Digite o ID do usuário: ')
+
+# Cria o objeto Usuario com os dados fornecidos:
+usuario = Usuario(nome, email, id_usuario)
+
+# Exibe os detalhes do usuário:
+print('\nUsuário cadastrado com sucesso!')
+print(usuario)
