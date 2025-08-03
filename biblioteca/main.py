@@ -26,7 +26,7 @@ def cadastrar_usuario():
 # Função para buscar um livro na biblioteca:
 def buscar_livro(biblioteca):
     isbn_busca = input('Digite o código ISBN do livro a ser buscado: ')
-    livro_encontrado = biblioteca.buscar_livros(isbn_busca)
+    livro_encontrado = biblioteca.buscar_livro(isbn_busca)
     if livro_encontrado:
         print(f'Livro encontrado: {livro_encontrado}')
     else:
