@@ -54,5 +54,5 @@ class Biblioteca:
         else:
             # Se houver livros, itera sobre eles e imprime suas representações em string
             for livro in self.livros.values():
-                print(livro)
-        return f'{self.titulo} de {self.autor} ({self.ano_publicacao}) - ISBN: {self.isbn}'
+                print(f'{livro.titulo} de {livro.autor} ({livro.ano_publicacao}) - ISBN: {livro.isbn}')
+            
